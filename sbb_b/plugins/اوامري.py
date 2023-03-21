@@ -9,7 +9,7 @@ from sbb_b import sbb_b
 from ..Config import Config
 from ..core import check_owner
 sbb_b_IC = "https://telegra.ph/file/51368457a6dbe26ceb1a8.jpg"
-ROE = "** هـذه هي قائمة اوامـر سـورس سيمو  **"
+ROE = "** هـذه هي قائمة اوامـر سـورس افاتار**"
 ROZADM = "من هنا يمكنك ايجاد جميع"
 RAZAN = Config.TG_BOT_USERNAME
 
@@ -23,7 +23,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         await sbb_b.get_me()
         if query.startswith("اوامري") and event.query.user_id == sbb_b.uid:
             buttons = [
-                [Button.inline("معلومات سيمو", data="AOMRDB")],
+                [Button.inline("معلومات افاتار", data="AOMRDB")],
                 [
                     Button.inline("البوت", data="eeeeq"),
                     Button.inline("الكروب", data="admincmd_s"),
@@ -76,7 +76,7 @@ async def repo(event):
 @check_owner
 async def _(event):
     butze = [
-        [Button.inline("معلومات سيمو", data="AOMRDB")],
+        [Button.inline("معلومات افاتار data="AOMRDB")],
         [
             Button.inline("البوت", data="eeeeq"),
             Button.inline("الكروب", data="admincmd_s"),
@@ -145,7 +145,7 @@ async def varssett(event):
 الاستخدام : تقوم بالرد على الرمز بالامر   `.وضع الرمز`
 
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس سيمو @FTTUTY""",
+اوامر فارات سورس افاتار @source_av""",
         buttons=[
             [Button.inline("رجوع", data="namevar")],
         ],
@@ -167,7 +167,7 @@ async def varssett(event):
 * كيفية جلب رابط الصورة؟
 -بالرد على الصورة المراد استخراج منها الرابط ب  `.تلكراف ميديا`
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس سيمو @FTTUTY""",
+اوامر فارات سورس افاتار@source_av""",
         buttons=[
             [Button.inline("رجوع", data="namevar")],
         ],
