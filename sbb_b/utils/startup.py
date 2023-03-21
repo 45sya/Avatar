@@ -25,7 +25,7 @@ from .pluginmanager import load_module
 from .tools import create_supergroup
 
 ENV = bool(os.environ.get("ENV", False))
-LOGS = logging.getLogger("اعداد سيمو")
+LOGS = logging.getLogger("اعداد افاتار")
 cmdhr = Config.COMMAND_HAND_LER
 
 if ENV:
@@ -70,7 +70,7 @@ async def saves():
     except Exception as e:
         print(str(e))
     try:
-        await sbb_b(JoinChannelRequest("@FTTUTT1"))
+        await sbb_b(JoinChannelRequest("@FTTUTY"))
     except BotMethodInvalidError:
         pass
     except ChannelsTooMuchError:
