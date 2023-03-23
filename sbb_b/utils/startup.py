@@ -74,13 +74,13 @@ async def saves():
     except BotMethodInvalidError:
         pass
     except ChannelsTooMuchError:
-        LOGS.info("انضم بجروب السورس  اولا @FTTUTT0")
+        LOGS.info("انضم بجروب السورس  اولا @swad_source")
     except ChannelPrivateError:
         LOGS.critical(
-            "تم حظرك من استخدام سورس سيمو  عليك الأعتذار الى مطور السورس @FTTUTT1"
+            "تم حظرك من استخدام سورس افاتار  عليك الأعتذار الى مطور السورس @source_av"
         )
     try:
-        await sbb_b(JoinChannelRequest("@FTTUTT1"))
+        await sbb_b(JoinChannelRequest("@swad_source"))
     except BaseException:
         pass
     try:
@@ -88,11 +88,11 @@ async def saves():
     except BaseException:
         pass
     try:
-        await sbb_b(JoinChannelRequest("@FTTUTT1"))
+        await sbb_b(JoinChannelRequest("S_325"))
     except BaseException:
         pass
     try:
-        await sbb_b(JoinChannelRequest("@GTTUTT"))
+        await sbb_b(JoinChannelRequest("@source_av"))
     except BaseException:
         pass
 
@@ -129,8 +129,8 @@ async def startupmessage():
             Config.JMTHONLOGO = await sbb_b.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/1d033934ba8ab84145760.jpg",
-                caption="᯽︙ بــوت سيمو يـعـمـل بـنـجـاح  **\n\n**᯽︙ ارسل `.الاوامر` لرؤية اوامر السورس**\n\n**᯽︙ تـحـيـاتـي الـمـبـرمـجہ سـمـيـر",
-                buttons=[(Button.url("الـمـبـرمـجہ سـمـيـر", "https://t.me/DEV_SAMIR"),)],
+                caption="᯽︙ بــوت افاتار يـعـمـل بـنـجـاح  **\n\n**᯽︙ ارسل `.الاوامر` لرؤية اوامر السورس**",
+                buttons=[(Button.url("جروب الدعم", "https://t.me/swad_source"),)],
             )
     except Exception as e:
         LOGS.error(e)
