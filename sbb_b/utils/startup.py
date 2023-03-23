@@ -103,7 +103,7 @@ async def mybot():
     f"ـ {rz_ment}"
     f"⪼ هذا هو بوت خاص بـ {rz_ment} يمكنك التواصل معه هنا"
     starkbot = await sbb_b.tgbot.get_me()
-    perf = "[ بوت سيمو ]"
+    perf = "[ بوت افاتار ]"
     bot_name = starkbot.first_name
     botname = f"@{starkbot.username}"
     if bot_name.endswith("Assistant"):
@@ -273,7 +273,7 @@ async def verifyLoggerGroup():
         descript = "⪼ هذه هي مجموعه الحفظ الخاصه بك لا تحذفها ابدا  𓆰."
         photobt = await sbb_b.upload_file(file="razan/pic/samir2.jpg")
         _, groupid = await create_supergroup(
-            "مجموعة إشعارات سيمو ", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
+            "مجموعة إشعارات افاتار ", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("تم انشاء كروب الحفظ بنجاح")
@@ -298,7 +298,7 @@ async def verifyLoggerGroup():
         descript = "❃ لا تحذف او تغادر المجموعه وظيفتها حفظ رسائل التي تأتي على الخاص"
         photobt = await sbb_b.upload_file(file="razan/pic/samir1.jpg")
         _, groupid = await create_supergroup(
-            "مجموعة تخزين سيمو ", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
+            "مجموعة تخزين افاتار ", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print("تم عمل الكروب التخزين بنجاح واضافة الفارات اليه.")
