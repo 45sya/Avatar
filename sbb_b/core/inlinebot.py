@@ -53,7 +53,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"** ◉ مرحبا عزيزي {mention} ↫**\n\n** ◉ اليكَ قائمة بازرار مضمنة لاوامر ↫ ** \n\n ⌯╼═══❬ [᥉᥆υᖇᥴᥱ ᥉ᥱꪔ᥆](https://t.me/FTTUTY) ❭═══╾⌯"
+    text = f"** ◉ مرحبا عزيزي {mention} ↫**\n\n** ◉ اليكَ قائمة بازرار مضمنة لاوامر ↫ ** \n\n ⌯╼═══❬ [⤶ .〝𝘼𝙑⍢⃝𝙎𝙊𝙐𝙍𝘾𝞝〞.](https://t.me/source_av) ❭═══╾⌯"
     buttons = [
         (Button.inline("معلومات الملفات 🗂", data="check"),),
         (
@@ -561,7 +561,7 @@ async def inline_handler(event):
                 Button.url("قناة السورس", "https://t.me/FTTUTY"),
                 Button.url(
                     "المطور",
-                    "t.me/DEV_SAMIR",
+                    "t.me/DIV_MUHAMED",
                 ),
             )
         ]
@@ -570,14 +570,14 @@ async def inline_handler(event):
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "لجعل بوت سيمو من نصيبك!", "md"
+            "لجعل بوت افاتار من نصيبك!", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="[᥉᥆υᖇᥴᥱ ᥉ᥱꪔ᥆](https://t.me/FTTUTY)",
+            title="[᥉᥆υᖇᥴᥱ ᥉ᥱꪔ᥆](https://t.me/source_av)",
             description="لتنصيبه لك",
-            url="https://t.me/FTTUTY",
+            url="https://t.me/source_av",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
